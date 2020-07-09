@@ -51,10 +51,14 @@ public class homeworkLesson3_Guess_the_number {
 
 
     public static int getNumberFromScanner(Scanner sc, String message, int min, int max) {
-        int x;
+        int x=max+1;
         do {
             System.out.println(message);
-            x = sc.nextInt();
+            if(sc.hasNextInt())
+            {
+                x = sc.nextInt();
+            }
+            else {sc.nextLine();}
         } while (x < min || x > max);
 
         return x;
