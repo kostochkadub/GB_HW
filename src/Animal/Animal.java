@@ -15,11 +15,10 @@ public class Animal {
         if(length <= maxJump){
         System.out.println("Животное "+name+" подпрыгнуло на "+length+" метров");
         }
-        else System.out.println("Животное " +name+  " не может так прыгать на "+length+" метров");
     }
 
     public void run(int length) {
-        if(length <= maxRun){
+        if(length <= this.maxRun){
         System.out.println("Животное "+name+" бежит "+length+" м");
         }
         else System.out.println("Животное "+name+" не может так бегать на "+length+" метров");
